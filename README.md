@@ -22,5 +22,6 @@ Users appreciate release notes as you update your extension.
 
 Initial release
 
+Dedicated to the great Tclers, Yoram and Ofer.
 
 
