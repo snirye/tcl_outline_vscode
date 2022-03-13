@@ -6,7 +6,7 @@ Show tcl procs and namespaces at the explorer's outline view
 
 For example if there is an image subfolder under your extension project workspace:
 
-![Example](./screenshot.jpg)
+![Example](images/screenshot.jpg)
 
 
 ## Known Issues

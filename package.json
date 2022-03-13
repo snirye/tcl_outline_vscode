@@ -1,10 +1,17 @@
 {
+
 	"name": "tcl-outline",
 	"displayName": "tcl-outline",
-	"description": "add outline for tcl files",
+	"description": "Provide outline view for tcl files",
 	"version": "0.0.1",
+	"publisher": "snir001",
+	"repository": {
+        "type": "git",
+        "url": "https://github.com/Snir001/tcl_outline_vscode.git"
+    },
+    "homepage": "https://github.com/Snir001/tcl_outline_vscode.git",
 	"engines": {
-		"vscode": "^1.25.0"
+		"vscode": "^1.50.0"
 	},
 	"categories": [
 		"Other"
@@ -23,7 +30,7 @@
 		"test": "node ./out/test/runTest.js"
 	},
 	"devDependencies": {
-		"@types/vscode": "^1.65.0",
+		"@types/vscode": "^1.50.0",
 		"@types/glob": "^7.2.0",
 		"@types/mocha": "^9.1.0",
 		"@types/node": "14.x",
