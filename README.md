@@ -1,6 +1,8 @@
 # tcl-outline README
 
-Show tcl procs and namespaces at the explorer's outline view 
+Show tcl procs and namespaces at the explorer's outline view
+
+based on [perl-outline extension](https://github.com/hitode909/vscode-perl-outline) 
 
 ## Features
 
