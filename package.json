@@ -1,10 +1,10 @@
 {
 
-	"name": "tcl-outline",
-	"displayName": "tcl-outline",
+	"name": "tcl-vsc-outline",
+	"displayName": "tcl-vsc-outline",
 	"description": "Provide outline view for tcl files",
-	"version": "0.0.1",
-	"publisher": "snir001",
+	"version": "0.0.2",
+	"publisher": "SnirYehuda",
 	"repository": {
         "type": "git",
         "url": "https://github.com/Snir001/tcl_outline_vscode.git"
