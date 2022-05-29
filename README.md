@@ -23,11 +23,17 @@ For example if there is an image subfolder under your extension project workspac
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
 
-### 0.0.2
+### [0.0.3]
+- improve regex to catch more procs types
+- start curly bracket block 1 char before (in previous version the block started one char after the start bracket, which cause issue in case of empty procs *proc foo {args} {}* )
 
-Initial release
+
+## If you encounter issues and bugs, please open issue in github, or write to me at
+### SnirYehud@Gmail.com 
+
+
+
 
 Dedicated to the great Tclers, Yoram and Ofer.
 

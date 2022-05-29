@@ -81,7 +81,7 @@ export class TclDocumentSymbolProvider implements vscode.DocumentSymbolProvider 
         var keyword="(proc|(::)?itcl::body)";
         var space= " +";
         var name="([\\w:]+)";
-        var args="(\\w+|{ *(\\w+( +\\w+)*)?( +{\\w+ \\w+}( +{\\w+ \\w+})*)? *})";
+        var args="(\\w+|{ *(\\w+( +\\w+)*)?( +{\\w+ \\S+}( +{\\w+ \\S+})*)? *})";
         var total="^[ \\t]*"+keyword+space+name+space+args+space+"{";
         var pattern :RegExp = RegExp(total,"gm");
         return pattern;
@@ -97,7 +97,7 @@ export class TclDocumentSymbolProvider implements vscode.DocumentSymbolProvider 
             console.log(match);
             // find matching parenthsis of body block
             var str=match.input;
-            var pos=pattern.lastIndex;
+            var pos=pattern.lastIndex - 1;
             var blockEnd=findClosingBracket(str,pos);
             var startIndex = match.index;
             var type = match[1].trim();
