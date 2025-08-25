@@ -1,40 +1,52 @@
-# tcl-outline README
+# TCL Outline for VS Code
 
-Show tcl procs and namespaces at the explorer's outline view
+A lightweight **VS Code extension** that provides **outline navigation** (functions & namespaces with nesting) for Tcl scripts — improving productivity for engineers working with CAD flows, EDA tooling, or Tcl-based automation.
 
-based on [perl-outline extension](https://github.com/hitode909/vscode-perl-outline) 
+📦 Published on [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=sniryehuda.tcl-vsc-outline)  
+⭐ Used by engineers at Intel and beyond to accelerate Tcl workflow navigation.
 
-## Dependencies
-Must have Tcl language support to use
+---
 
-## Features
+## 🚀 Features
+- Adds **symbols view** in the VS Code outline explorer for Tcl `proc` and `namespace` definitions.
+- Nested view for easier navigation in complex scripts.
+- Compatible with standard Tcl language support extensions.
+- Actively improved based on community feedback.
 
-For example if there is an image subfolder under your extension project workspace:
+Example:
+![Tcl Outline Example](images/screenshot.jpg)
 
-![Example](images/screenshot.jpg)
+---
 
+## ⚙️ Installation
+1. Install [Tcl language support](https://marketplace.visualstudio.com/items?itemName=bitwisecook.tcl) in VS Code.  
+2. Search **“Tcl Outline”** in the VS Code Marketplace or [click here](https://marketplace.visualstudio.com/items?itemName=sniryehuda.tcl-vsc-outline).  
+3. Reload VS Code and start coding in Tcl.
 
-## Known Issues
+---
 
-* ~~Not showing under which symbols (proc/namespace) the curser is at.~~
-~~(shows only if the curser is on the symbol decleration)~~
-* Must have Tcl language support to use.
-* the proc block might ended if there is string of close curly brackets ("}}}}") in the proc.
+## 📝 Known Issues
+- `proc` block may close early if there is a string containing multiple `}` characters.  
+- Currently requires a Tcl language extension installed.  
+- Cursor context highlighting is limited to symbol declarations.
 
-## Release Notes
+---
 
-
+## 📦 Release Notes
 ### [0.0.3]
-- improve regex to catch more procs types
-- start curly bracket block 1 char before (in previous version the block started one char after the start bracket, which cause issue in case of empty procs *proc foo {args} {}* )
+- Improved regex to catch more `proc` types.  
+- Fixed curly-bracket block alignment (empty procs supported).  
 
+[Full changelog](CHANGELOG.md)
 
-## If you encounter issues and bugs, please open issue in github, or write to me at
-### SnirYehud@Gmail.com 
+---
 
+## 🤝 Contributing
+Issues and PRs are welcome!  
+👉 [Open an issue](https://github.com/snirye/tcl_outline_vscode/issues) or reach out: **sniryehud@gmail.com**
 
+---
 
-
-Dedicated to the great Tclers, Yoram and Ofer.
-
-
+## 🙏 Acknowledgements
+Inspired by [Perl Outline extension](https://github.com/hitode909/vscode-perl-outline).  
+Dedicated to the great Tclers **Yoram** and **Ofer**.
