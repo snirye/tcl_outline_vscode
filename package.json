@@ -6,10 +6,10 @@
 	"version": "0.0.4",
 	"publisher": "SnirYehuda",
 	"repository": {
-        "type": "git",
-        "url": "https://github.com/snirye/tcl_outline_vscode.git"
-    },
-    "homepage": "https://github.com/snirye/tcl_outline_vscode.git",
+		"type": "git",
+		"url": "https://github.com/snirye/tcl_outline_vscode.git"
+	},
+	"homepage": "https://github.com/snirye/tcl_outline_vscode.git",
 	"engines": {
 		"vscode": "^1.50.0"
 	},
@@ -31,15 +31,16 @@
 	},
 	"devDependencies": {
 		"@types/vscode": "^1.50.0",
-		"@types/glob": "^7.2.0",
-		"@types/mocha": "^9.1.0",
+		"@types/glob": "^8.1.0",
+		"@types/mocha": "^10.0.6",
 		"@types/node": "14.x",
 		"@typescript-eslint/eslint-plugin": "^5.12.1",
 		"@typescript-eslint/parser": "^5.12.1",
 		"eslint": "^8.9.0",
-		"glob": "^7.2.0",
-		"mocha": "^9.2.1",
+		"glob": "^10.3.10",
+		"mocha": "^11.7.1",
 		"typescript": "^4.5.5",
-		"@vscode/test-electron": "^2.1.2"
+		"@vscode/test-electron": "^2.5.2",
+		"@vscode/vsce": "^3.6.0"
 	}
 }
